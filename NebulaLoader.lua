@@ -1,8 +1,8 @@
-local key = getgenv().NebulaKey
+local key = script_key
 local version = getgenv().NebulaVersion
 
 if not key then
-    warn("No key")
+    warn("No Luarmor key found")
     return
 end
 
@@ -22,6 +22,4 @@ elseif version == "Full" then
     "https://api.luarmor.net/files/v4/loaders/cf62c75f9d9512152bac397773b324ce.lua"
     ))()
 
-else
-    warn("Choose Lite or Full")
 end
